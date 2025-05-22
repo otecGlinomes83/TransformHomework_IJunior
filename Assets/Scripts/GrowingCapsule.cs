@@ -1,15 +1,10 @@
 using UnityEngine;
 
-public class GrowingCapsule : MonoBehaviour, IGrow
+public class GrowingCapsule : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
     private void Update()
-    {
-        Grow();
-    }
-
-    public void Grow()
     {
         transform.localScale += Vector3.one * (_speed * Time.deltaTime);
     }

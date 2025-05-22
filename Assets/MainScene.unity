@@ -131,7 +131,9 @@ GameObject:
   - component: {fileID: 68188673}
   - component: {fileID: 68188672}
   - component: {fileID: 68188671}
-  - component: {fileID: 68188670}
+  - component: {fileID: 68188676}
+  - component: {fileID: 68188675}
+  - component: {fileID: 68188674}
   m_Layer: 0
   m_Name: ChengingCube
   m_TagString: Untagged
@@ -154,24 +156,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1683842985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &68188670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68188668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0b1fdda2d1106429462fa6c958d237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotateSpeed: 200
-  _moveSpeed: 50
-  _growingSpeed: 1
-  _rotateX: 0
-  _rotateY: 1
-  _rotateZ: 0
 --- !u!65 &68188671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +230,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68188668}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &68188674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68188668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fec640d21f47c4a8c3b999d4c75e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateSpeed: 250
+--- !u!114 &68188675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68188668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54cd28c7730f3846b9af7aeef98428f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+--- !u!114 &68188676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68188668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49163c2b1effb946944de1d4776b2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 25
 --- !u!1 &201277169
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,10 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1fec640d21f47c4a8c3b999d4c75e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 250
-  _rotateX: 0
-  _rotateY: 1
-  _rotateZ: 0
+  _rotateSpeed: 250
 --- !u!65 &201277172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -527,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49163c2b1effb946944de1d4776b2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _moveSpeed: 25
 --- !u!135 &937279967
 SphereCollider:
   m_ObjectHideFlags: 0

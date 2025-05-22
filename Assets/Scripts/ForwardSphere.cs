@@ -1,17 +1,11 @@
 using UnityEngine;
 
-public class ForwardSphere : MonoBehaviour, IMove
+public class ForwardSphere : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    private Vector3 _movementDirection = Vector3.forward;
+    [SerializeField] private float _moveSpeed;
 
     private void Update()
     {
-        Move();
-    }
-
-    public void Move()
-    {
-        transform.Translate(_movementDirection * _speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
     }
 }
