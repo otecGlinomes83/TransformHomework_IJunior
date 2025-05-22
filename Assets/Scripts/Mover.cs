@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ForwardSphere : MonoBehaviour
+public class Mover : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
 

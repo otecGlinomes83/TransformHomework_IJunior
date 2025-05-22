@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class GrowingCapsule : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
